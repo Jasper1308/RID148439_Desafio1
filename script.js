@@ -1,7 +1,8 @@
 async function buscarCEP() {
     const cep = document.getElementById('cep').value;
+    let length = cep.length
 
-    if(cep === ''){
+    if(cep === '' || length != 8){
         alert("Por favor, digite um CEP válido");
         return;
     }
