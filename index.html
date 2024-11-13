@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>DncWeather - Previsão do Tempo</title>
+</head>
+<body class="body">
+
+    <nav class="navbar bg-primary">
+        <div class="container text-center">
+            <h1 id="textnav">DncWeather</h1>
+            <p id="textnav">
+               <span id="separado">Endereços</span> <span id="separado">Previsão do Tempo</span> 
+            </p>
+        </div>
+    </nav>
+
+    <div class="texttittle">
+        <h1 id="texto">Descubra Mais com Precisão:<br>Previsões do Tempo e endereços<br>em tempo real.</h1>
+        <img id="img" width="210px" src="imagens/nuvem.svg" alt="error">
+    </div>
+
+    <form class="form-container" action="">   
+        <div>
+            <label class="label">Primeiro Nome:</label> <br>
+            <input class="input" type="text" placeholder="Insira seu primeiro nome:" required> <br>
+        </div> 
+        <div>
+            <label class="label" for="">E-mail:</label> <br>
+            <input class="input" type="email" placeholder="Insira seu e-mail" required> <br>
+        </div>
+        <div>
+            <label class="label" for="">Digite o CEP:</label> <br>
+            <input class="input" id="cep" type="text" placeholder="Insira o CEP" required> <br>
+        </div>
+        <div>
+            <label class="label" for="">Digite a latitude e longitude para saber a previsão:</label> <br>
+            <input class="input2" id="lat" type="text" placeholder="Latitude" required>
+            <input class="input2" id="long" type="text" placeholder="Longitude" required> <br>
+            <button id="button" onclick="executar()" type="button" class="container text-center">Acessar</button>
+        </div>
+    </form>
+
+    <div class="icon">
+        <h1 id="iconres">Resultado da busca por CEP:</h1>
+        <img id="iconimg" width="110px" src="imagens/icone.svg" alt="error">
+    </div>
+
+    <div class="local1">
+        <p class="margem">Logradouro/nome</p>
+        <p class="margem">Bairro/Distrito</p>
+        <p class="margem">Localidade/UF</p>
+    </div>
+    <div class="local2">
+        <p class="margem" id="resultadocep-logradouro"></p>
+        <p class="margem" id="resultadocep-bairro"></p>
+        <p class="margem" id="resultadocep-localidade"></p>
+    </div>
+
+    <div class="icon">
+        <h1 id="iconres2">Previsão do tempo na região: </h1>
+        <img width="140px" src="imagens/nuvin.svg" alt="error">
+    </div>
+
+    <div class="local3">
+        <p class="container text-center" id="resprev">Previsão de tempo de acordo com a região:</p>
+    </div>
+
+    <footer class="footer">
+        <p id="footertext1">Termos de Uso <span id="bar">|</span></p>
+        <p id="footertext">Política de Privacidade</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
