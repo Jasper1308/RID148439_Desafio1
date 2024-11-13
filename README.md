@@ -1,5 +1,7 @@
 # RID148439_Desafio1
 
+link: https://dncweatherrr.netlify.app/
+
 Este projeto é um site para consulta de CEP e previsão do tempo em tempo real. Utilizando duas APIs públicas (ViaCEP e OpenMeteo), o site permite ao usuário buscar informações sobre o seu endereço a partir do CEP e obter a previsão do tempo com base na latitude e longitude informadas. A interface foi criada com foco na simplicidade e funcionalidade, proporcionando uma experiência intuitiva ao usuário.
 
 Funcionalidades
